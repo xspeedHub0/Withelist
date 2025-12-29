@@ -1,0 +1,30 @@
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer.PlayerGui
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(1, 0, 1, 0)
+frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frame.BackgroundTransparency = 0.5
+frame.Parent = screenGui
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(0, 400, 0, 50)
+textLabel.Position = UDim2.new(0.5, -200, 0.5, -25)
+textLabel.Text = "NOT ACCES BUY IN DISCORD"
+textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+textLabel.TextSize = 30
+textLabel.TextStrokeTransparency = 0.5
+textLabel.Parent = frame
+
+local url = "https://discord.com/invite/your-invite-code" -- Cambia este enlace por el que desees
+setclipboard(url)
+
+local linkLabel = Instance.new("TextLabel")
+linkLabel.Size = UDim2.new(0, 400, 0, 50)
+linkLabel.Position = UDim2.new(0.5, -200, 0.6, -25)
+linkLabel.Text = url
+linkLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+linkLabel.TextSize = 20
+linkLabel.TextStrokeTransparency = 0.5
+linkLabel.Parent = frame
