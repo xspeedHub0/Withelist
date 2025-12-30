@@ -1,9 +1,23 @@
-import requests
+local HttpService = game:GetService("HttpService")
 
-WEBHOOK_URL = 'https://discord.com/api/webhooks/1451271499272028270/LF5Jz_otCY12QUSXO9BQjAYdwquhY1MEoAhpTl4obrbCfS7kQCKJtgejiBYeFRWKPjVt'
-
-data = {
-    'content': 'Hola'
+local webhookUrl = "https://discord.com/api/webhooks/1451271499272028270/LF5Jz_otCY12QUSXO9BQjAYdwquhY1MEoAhpTl4obrbCfS7kQCKJtgejiBYeFRWKPjVt"
+local data = {
+    content = "Hola"
 }
 
-requests.post(WEBHOOK_URL, json=data)
+local jsonData = HttpService:JSONEncode(data)
+
+local headers = {
+    ["Content-Type"] = "application/json"
+}
+
+local requestData = {
+    Url = webhookUrl,
+    Method = "POST",
+    Headers = headers,
+    Body = jsonData
+}
+
+pcall(function()
+    HttpService:RequestAsync(requestData)
+end)
