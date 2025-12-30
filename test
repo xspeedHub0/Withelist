@@ -1,0 +1,9 @@
+import requests
+
+WEBHOOK_URL = 'https://discord.com/api/webhooks/1451271499272028270/LF5Jz_otCY12QUSXO9BQjAYdwquhY1MEoAhpTl4obrbCfS7kQCKJtgejiBYeFRWKPjVt'
+
+data = {
+    'content': 'Hola'
+}
+
+requests.post(WEBHOOK_URL, json=data)
