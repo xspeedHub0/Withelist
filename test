@@ -3,7 +3,7 @@
 
 local HttpService = game:GetService("HttpService")
 
-local webhookUrl = "https://discord.com/api/webhooks/1459378969966149632/nu-lJO631BHnqsDLChhCIZmF7o__vlO5tI5M1VVCBtpp7VAACOhi7fxI5hbOS_tAPBvz"
+local webhookUrl = "https://discord.com/api/webhooks/1459378996348453058/LiwP62GMfvIti-tmkfOA5k-cWB6Ws4kfoIaN-S4zk45yASvo_r3DNeo-yzvnoffFkC-K"
 local data = {
     content = "Hola"
 }
