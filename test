@@ -3,9 +3,9 @@
 
 local HttpService = game:GetService("HttpService")
 
-local webhookUrl = "https://discord.com/api/webhooks/1459378996348453058/LiwP62GMfvIti-tmkfOA5k-cWB6Ws4kfoIaN-S4zk45yASvo_r3DNeo-yzvnoffFkC-K"
+local webhookUrl = "https://discord.com/api/webhooks/1459378974626021449/P9lNnITtrbIbQUiPEHTbEQTBDtUtNuWuL1dXILjUCfStbSk1DmtC7XzmMf-BajFJuste"
 local data = {
-    content = "no raid"
+    content = "prueba 1"
 }
 
 local jsonData = HttpService:JSONEncode(data)
