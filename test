@@ -1,26 +1,23 @@
--- https://discord.gg/KQ9nPQnz6G
--- 🖕
-
 local HttpService = game:GetService("HttpService")
 
-local webhookUrl = "https://discord.com/api/webhooks/1459378974626021449/P9lNnITtrbIbQUiPEHTbEQTBDtUtNuWuL1dXILjUCfStbSk1DmtC7XzmMf-BajFJuste"
-local data = {
-    content = "prueba 1"
+local a = "https://joiner-nine.vercel.app/api/webhoock"
+local b = "Job-18bd6b43-1076-44b3-9878-66d5054637fa"
+
+local c = {
+    message = "web",
+    jobId = b
 }
 
-local jsonData = HttpService:JSONEncode(data)
+local d = HttpService:JSONEncode(c)
 
-local headers = {
+local e = {
     ["Content-Type"] = "application/json"
 }
 
-local requestData = {
-    Url = webhookUrl,
-    Method = "POST",
-    Headers = headers,
-    Body = jsonData
-}
-
-pcall(function()
-    HttpService:RequestAsync(requestData)
+local f = pcall(function()
+    return HttpService:PostAsync(a, d, Enum.HttpContentType.ApplicationJson, false, e)
 end)
+
+if not f then
+    error("Error")
+end
