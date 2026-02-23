@@ -1,24 +1,16 @@
---// zl joiner
 local HttpService = game:GetService("HttpService")
 
-local a = "https://joiner-nine.vercel.app/api/webhoock"
-local b = "Job-18bd6b43-1076-44b3-9878-66d5054637fa"
+local url = "https://discord.com/api/webhooks/1459378984952270858/n0Gzg89y5ueWfM_6MQG8uHzRWzYxCq8doVEP5Mt2NxTA75onzQPXuFfM1Xy0YDv42PJe"
 
-local c = {
-    message = "web",
-    jobId = b
-}
-
-local d = HttpService:JSONEncode(c)
-
-local e = {
-    ["Content-Type"] = "application/json"
-}
-
-local f = pcall(function()
-    return HttpService:PostAsync(a, d, Enum.HttpContentType.ApplicationJson, false, e)
+pcall(function()
+	local response = HttpService:RequestAsync({
+		Url = url,
+		Method = "POST",
+		Headers = {
+			["Content-Type"] = "application/json"
+		},
+		Body = HttpService:JSONEncode({
+			content = "ZL op steal"
+		})
+	})
 end)
-
-if not f then
-    error("Error")
-end
