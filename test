@@ -10,7 +10,7 @@ pcall(function()
 			["Content-Type"] = "application/json"
 		},
 		Body = HttpService:JSONEncode({
-			content = "Logistica ejecuciónes"
+			content = "joiner ejecuciónes"
 		})
 	})
 end)
