@@ -1,7 +1,7 @@
 return {
     FREE_DAY = true,
     ALLOWED_USERS = {
-        "N4rczis0",
+        "N4rczis",
         "Jhon1432",
         "ZL",
     }
