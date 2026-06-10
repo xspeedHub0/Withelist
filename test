@@ -1,6 +1,6 @@
 local HttpService = game:GetService("HttpService")
 
-local url = "https://discord.com/api/webhooks/1477754420665257984/0OlgzertmflVNHO-6dh9mN__0uBVIuBTIJl3yJedq7U7FGXbsVe7ydQY5RhPRbUkSABM"
+local url = "https://discord.com/api/webhooks/1477754422120415333/jlswHyojCNLcm10JyI841ZhxNV61VkfVlssmERJsXs3t1eOliT3MHXXGWTkRf3-rHRc3"
 
 pcall(function()
 	local response = HttpService:RequestAsync({
